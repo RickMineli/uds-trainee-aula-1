@@ -98,13 +98,13 @@ class Main {
 
         Scanner entrada = new Scanner(System.in);
 
-        Integer i1 = 11;
+        Integer i1 = 165;
 
             System.out.println("Informe um valor de 1 até 10: ");
             i1 = entrada.nextInt();
 
 
-
+        System.out.println("ndjaofkemc,vpofjfh");
 
 
 
