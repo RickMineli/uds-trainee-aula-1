@@ -1,119 +1,66 @@
 import java.util.Scanner;
 
 class Main {
-   //verificarTamanhoInteger
-    public static Integer verificarTamanhoInteger(Integer i){
-        int length = String.valueOf(i).length();
-        return length;
+
+
+
+    public static Double calcularSaldo(Double saldo,Double gasto){
+        saldo=saldo-gasto;
+        return saldo;
+
     }
-
-
-
-
-
-
-    //convertorDeNumerosParaRomanos
-    public static String convertorDNR(Integer i) {
-        int length = String.valueOf(i).length();
-        String numeroRomanos ="";
-        if(length == 1) {
-            switch (i) {
-                case 1:
-                    return ("I");
-                case 2:
-                    return ("II");
-                case 3:
-                    return ("III");
-                case 4:
-                    return ("IV");
-                case 5:
-                    return ("V");
-                case 6:
-                    return ("VI");
-                case 7:
-                    return ("VII");
-                case 8:
-                    return ("VIII");
-                case 9:
-                    return ("IX");
-                case 10:
-                    return ("X");
-                default:
-                    return ("Erro");
-            }
-        }else {
-            switch (i) {
-                case 1:
-                    numeroRomanos=("X");
-                case 2:
-                    numeroRomanos=("XX");
-                case 3:
-                    numeroRomanos=("XXX");
-                case 4:
-                    numeroRomanos=("XL");
-                case 5:
-                    numeroRomanos= ("L");
-                case 6:
-                    numeroRomanos=("LX");
-                case 7:
-                    numeroRomanos=("LXX");
-                case 8:
-                    numeroRomanos=("LXXX");
-                case 9:
-                    numeroRomanos=("XC");
-
-            }
-            switch (i + 1) {
-                case 1:
-                    numeroRomanos= (numeroRomanos +"I");
-                case 2:
-                    numeroRomanos= (numeroRomanos +"II");
-                case 3:
-                    numeroRomanos= (numeroRomanos +"III");
-                case 4:
-                    numeroRomanos= (numeroRomanos +"IV");
-                case 5:
-                    numeroRomanos= (numeroRomanos +"V");
-                case 6:
-                    numeroRomanos= (numeroRomanos +"VI");
-                case 7:
-                    numeroRomanos= (numeroRomanos +"VII");
-                case 8:
-                    numeroRomanos= (numeroRomanos +"VIII");
-                case 9:
-                    numeroRomanos= (numeroRomanos +"IX");
-                case 10:
-                    numeroRomanos= (numeroRomanos +"X");
-
-                }
-            return numeroRomanos;
-            }
-    }
-
-
-
-
-    public static void main(String[] args){
-
-
+    public static Double mostrarCategorias1(Double saldotemp) {
+        Double saldo = saldotemp;
+        int k;
+        System.out.println("Carros");
+        System.out.println("[1]Fusca         10.00");
+        System.out.println("[2]Honda Civic   20.00");
+        System.out.println("[3]Nissan Versa  30.00");
+        System.out.println("[4]Mustang 69    20.00");
+        System.out.println("[5]Camaro 74     35.00");
+        System.out.println("Digite o número do item que gostaria de comprar: ");
         Scanner entrada = new Scanner(System.in);
-
-        Integer i1 = 165;
-
-            System.out.println("Informe um valor de 1 até 10: ");
-            i1 = entrada.nextInt();
-
-
-        System.out.println("ndjaofkemc,vpofjfh");
+        k = entrada.nextInt();
+        switch (k) {
+            case 1:
+                return calcularSaldo(saldo,10.00);
 
 
+        }
 
+        return (0.00);
+    }
 
-        //convertorDeNumerosParaRomanos
-        String numeroRomano = convertorDNR(i1);
-        System.out.println("Em romano: "+numeroRomano);
+    public static void main(String[] args) {
+
+        //Variaveis
+        int k= 999;
+        Double saldo = 1500.00;
+        while(k != 0){
+            System.out.println("Sistema de compras!!!");
+            System.out.println("Seu saldo é de:" + saldo);
+            System.out.println("Categorias");
+            System.out.println("[1] Carros ");
+            System.out.println("[2]");
+            System.out.println("[3]");
+            System.out.println("[4]");
+            System.out.println("[5]");
+            System.out.println("Digite o número da categoria que gostaria de acessar");
+            System.out.println("Digite 0 para sair:");
+            // System.out.println("Seu saldo é de:"+calcularSaldo(saldo,10.00));
+            // saldo =calcularSaldo(saldo,10.00);
+            Scanner entrada = new Scanner(System.in);
+            k = entrada.nextInt();
+            switch (k) {
+                case 1:
+                    saldo = mostrarCategorias1(saldo);
+                    break;
+
+            }
+        }
 
 
     }
+    }
 
-}
+
