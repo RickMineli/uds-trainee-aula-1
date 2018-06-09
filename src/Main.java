@@ -3,13 +3,15 @@ import java.util.Scanner;
 class Main {
 
 
-
+    //Subtração do saldo na hora da compra, mais verificação
+    //de saldo suficiente ou não
     public static Double calcularSaldo(Double saldo,Double gasto) {
-
         if (saldo < gasto){
             System.out.println("------------------------------");
             System.out.println("Você nâo tem saldo suficiente!");
             System.out.println("------------------------------");
+            System.out.println();
+
             return saldo;
         }else {
             saldo = saldo - gasto;
