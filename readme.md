@@ -1,3 +1,4 @@
+### respostas-aula-1
 
 ##### 1. (1 ponto) O que são variáveis, e quais os seus tipos?
  Variáveis são caracteres que o programador define para serão usadas para armazenamento. O que será armazenado em java depende do tipo dela. Existem dois tipos de tipos, primitivos e compostos. Os primitivos seriam int, char, double, float, boolean. E os compostos são String, Integer. Em java os compostos são na verdade classes definidas pela própria linguagem, por isso existem métodos neles. 
@@ -105,7 +106,7 @@ Resposta:
     }
 ```
 ##### 7.(5 pontos) Resolver o exercícios hard core 3 dos slides acima citados.
-Está no src deste mesmo repositório repositório.
+Está no src deste mesmo repositório.
 
 
 
